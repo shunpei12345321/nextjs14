@@ -33,6 +33,7 @@ export const POST = async (req: Request, res: NextResponse) => {
     const blog = await prisma.post.create({
       data: { title, content, authorId },
     });
+    return NextResponse.json({ message: "Success", blog }, { status: 200 });
   } catch (err) {
   } finally {
     await prisma.$disconnect();
