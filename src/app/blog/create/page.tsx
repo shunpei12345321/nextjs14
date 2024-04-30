@@ -37,15 +37,17 @@ const PostBlog = () => {
  
   return (
     <div>
-      <div className="flex flex-col justify-center items-center">
+      <div className="flex flex-col bg-neutral-200 justify-center items-center">
+        <h1 className="text-5xl font-bold flex-grow  text-center">New Blog</h1>
         <div className="w-full py-5 flex items-center justify-between">
+          
           <Link
             href="/"
-            className="ml-4 px-2 py-1 border-2 rounded-lg text-gray-800 border-gray-700 bg-gray-100"
+            className="ml-4 px-1 py-1 border-2 rounded-lg text-gray-800 border-gray-700 bg-gray-100"
           >
             戻る
           </Link>
-          <h1 className="text-5xl font-bold flex-grow text-center">New Blog</h1>
+          
         </div>
         <form onSubmit={handleSubmit} className="flex flex-col w-2/3 pb-5">
           <input
